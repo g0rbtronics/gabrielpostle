@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matics</title>
+</head>
+<body>
+  <div class="container">
+    <div class="soundcloud_about_container2">
+    <div class ="container_content2" ><a href="index.html"><img class="back_arrow" src="whiteArrow.png"></a></div>
+    <div class ="container_content2">cradel</div>
+    <div class="dropdown container_content2">
+       <button class ="container_content2">...</button>
+    <div class="dropdown_content container_content2">
+        <div class ="impact_about">Cradle was a performance/installation hybrid I did with drag artist Celeste. As Celeste performed inside a suspended cloth structure, casting projections of themselves onto the interior walls for viewers to see. I composed evolving harmonic textures and digital sound layers in real time using a custom Max MSP patch. I developed the score to her performance to express their thoughts on themes of embodiment, enclosure and transformation.</div>
+    </div> 
+    </div>
+</div> 
+    <div class="vid-wrapper">
+      <iframe class="vid" src="https://www.youtube.com/embed/UTVMftFzOTU?si=Cx9YzoEl6e-GNzDJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    </div>
+  </div>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const dropdown = document.querySelector('.dropdown');
+          const button = dropdown.querySelector('button');
+        
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
+          });
+        
+          // Clicking elsewhere closes it
+          document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+              dropdown.classList.remove('active');
+            }
+          });
+        });
+        </script>
+</body>
+</html>

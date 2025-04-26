@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>146.83</title>
+</head>
+<body>
+    <div class="main_container"></div>
+    <div class="soundcloud_about_container">
+        <div class ="container_content" ><a href="index.html"><img class="back_arrow" src="whiteArrow.png"></a></div>
+        <div class ="container_content" >146.83</div>
+        <div class="dropdown container_content">
+           <button class ="container_content">...</button>
+        <div class="dropdown_content container_content">
+            <div class ="impact_about">"146.83" is a piece I composed and performed as my thesis project for my Degree at SAIC. I aimed to ritualize sound in and of itself by arraning justly tuned frequencies and digital textural elements. The piece was performed in the stairwell of SAIC's Washington Gallery; played loudly through two speakers and a subwoofer. This performance amalgamized my research on the math of musical harmony, my deep interest in how these relationships can be expressed through computer code, and my love for analog synthesizers and digital processing of sound.</div>
+        </div> 
+        </div>
+        
+        <div class="container_content">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2031018948&color=%235f5752&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/gabrielpostle" title="Gabriel Vincent Alfieri Postle" target="_blank" style="color: #cccccc; text-decoration: none;">Gabriel Vincent Alfieri Postle</a> · <a href="https://soundcloud.com/gabrielpostle/14683a" title="146.83" target="_blank" style="color: #cccccc; text-decoration: none;">146.83</a></div>
+        </div>
+    </div> 
+    <div>
+      <div class="pic_container"><img class="pic" src="IMPACT2023_030323_180.jpg"></div> 
+      <div class="pic_container"><img class="pic" src="IMPACT2023_030323_179.jpg"></div>
+      <div class="pic_container"><img class="pic" src="IMPACT2023_030323_177.jpg"></div> 
+      <div class="pic_container"><img class="pic" src="IMPACT2023_030323_181.jpg"></div>  
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const dropdown = document.querySelector('.dropdown');
+          const button = dropdown.querySelector('button');
+        
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
+          });
+        
+          // Clicking elsewhere closes it
+          document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+              dropdown.classList.remove('active');
+            }
+          });
+        });
+        </script>
+</body>
+</html>
