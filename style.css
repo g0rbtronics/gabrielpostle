@@ -14,6 +14,14 @@ body{
     background-color: black;
 }
 
+.g0rb-link:visited{
+    color:greenyellow;
+}
+
+.g0rb-link{
+    color:rgb(0, 195, 255);
+}
+
 .body-index {
     background-image: url('mainImage.jpg');
     background-size: cover;
