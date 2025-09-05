@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G0RBCUBECONTROLLER</title>
+</head>
+<body>
+  <div class="container">
+    <div class="soundcloud_about_container2">
+    <div class ="container_content2" ><a href="index.html"><img class="back_arrow" src="whiteArrow.png"></a></div>
+    <div class ="container_content2">G0RBCUBECONTROLLER</div>
+    <div class="dropdown container_content2">
+       <button class ="container_content2">...</button>
+    <div class="dropdown_content container_content2">
+        <div class ="impact_about">G0rb is a musical project in which I develope experimental performance methods using video game controllers and other devices. The ethos behind this project is to create what I consider "tasteless music", not considering what is good but what is fun to make. I develop these audio visual controllers using a video game engine and custom Max MSP and TouchDesigner patches. For more info visit <a class="g0rb-link" href="https://g0rb.com/" target="blank">g0rb.com</a></div>
+    </div> 
+    </div>
+</div> 
+<div>
+  <div class="vid-wrapper"><iframe class="vid" src="https://youtube.com/embed/Rsb6I7sa65g?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div> 
+  <div class="vid-wrapper"><iframe class="vid" src="https://youtube.com/embed/ReaheGy0nsM?si=vLB7c1nQmAAgvzic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <div class="vid-wrapper"><iframe class="vid" src="https://youtube.com/embed/zo9OonGQicU?si=_UUZ5IOG-hRdNWSC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+</div>
+  </div>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const dropdown = document.querySelector('.dropdown');
+          const button = dropdown.querySelector('button');
+        
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
+          });
+        
+          // Clicking elsewhere closes it
+          document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+              dropdown.classList.remove('active');
+            }
+          });
+        });
+        </script>
+</body>
+</html>
